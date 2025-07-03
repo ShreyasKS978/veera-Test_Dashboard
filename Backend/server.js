@@ -315,7 +315,7 @@ app.get('/api/protected', authenticateToken, (req, res) => {
 
 initDatabase().then(() => {
   app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+    console.log(`Server running on http://13.233.148.53:${port}`);
     console.log('Available routes:');
     console.log('GET  /                 -> Login page');
     console.log('GET  /signup           -> Signup page');
