@@ -16,15 +16,15 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret_key';
 
 const pool = new Pool({
   user: process.env.DB_USER || 'postgres',
-  host: process.env.DB_HOST || 'localhost',
+  host: process.env.DB_HOST || 'postgres',
   database: process.env.DB_DATABASE || 'login',
-  password: process.env.DB_PASSWORD || 'Veera@0134',
+  password: process.env.DB_PASSWORD || 'admin123',
   port: parseInt(process.env.DB_PORT) || 5432,
 });
 
 const allowedOrigins = [
   'http://127.0.0.1:5500',
-  'http://localhost:3000'
+  'http://13.233.148.53:3048'
 ];
 
 app.use(cors({
