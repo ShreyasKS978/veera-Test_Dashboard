@@ -24,6 +24,7 @@ const pool = new Pool({
 
 const allowedOrigins = [
   'http://127.0.0.1:5500',
+  'http://13.233.148.53:8154',
   'http://13.233.148.53:3048'
 ];
 
